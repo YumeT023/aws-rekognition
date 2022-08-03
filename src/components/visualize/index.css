@@ -1,0 +1,67 @@
+/* -------------
+ $. Visualize
+  -------------*/
+.Visualize {
+  height: 100%;
+  width: 65%;
+  float: left;
+  padding-inline: 0.5%;
+}
+
+.Visualize>.output {
+  height: 8%;
+  padding-block: 0.2%;
+
+  display: grid;
+  column-gap: 0.2em;
+  grid-template-columns: 20% auto;
+}
+
+.output>div {
+  padding-inline: 0.7em;
+  color: var(--vi-1);
+  border-radius: 0.2em;
+  height: 100%;
+}
+
+.output>main {
+  border-radius: 0.5em 0.5em 0 0;
+  display: flex;
+  justify-content: left;
+  overflow: scroll hidden;
+  padding-block: 0.5em;
+}
+
+.Visualize>.pic-wrapper {
+  border-radius: 4px;
+  height: 92%;
+  background-color: #f5f3f3;
+}
+
+.Visualize img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pic-wrapper>main {
+  height: 62%;
+  width: 60%;
+  background-color: var(--vi-2);
+  border-radius: 5px;
+  position: relative;
+}
+
+
+.info {
+  font-weight: 450;
+  padding: 0.35em;
+  margin-inline: 0.2em;
+  border-radius: 0.2em;
+}
+
+.b-box {
+  border: 2px solid var(--w-1);
+  position: absolute;
+  z-index: 9999;
+}

@@ -1,0 +1,59 @@
+/* -------------
+ $. Card
+  -------------*/
+.card {
+  max-height: max-content;
+  height: min-content;
+  width: 100%;
+  padding: 1% 3%;
+}
+
+.card-container {
+  height: 100%;
+  background-color: #ebebeb;
+  border-radius: 0.5em;
+}
+
+.card-container>div {
+  padding: 1.5%;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  background-color: #ececec;
+  border-radius: 0.5em 0.5em 0 0;
+  position: relative;
+  justify-content: space-between;
+}
+
+.card-header i {
+  transition: 0.1s;
+}
+
+.reverse-angle {
+  transform: rotate(180deg);
+}
+
+.card-header .Chip {
+  padding-inline: 5%;
+  border-radius: 0.8em;
+}
+
+.card-content {
+  max-height: 9em;
+  padding: 2em;
+  background-color: #dddddd;
+  border-radius: 0 0 0.5em 0.5em;
+  position: relative;
+  transition: opacity 2s ease-out, top 2s step-end;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+
+.card-content.d-transit-none {
+  transition: opacity 0.5s ease-out, top 0.5s step-start;
+  display: none;
+}

@@ -1,0 +1,62 @@
+/* -------------
+ $. Sidebar
+ -------------*/
+.Sidebar {
+  height: 100%;
+  float: left;
+  width: 35%;
+}
+
+.Sidebar>header {
+  padding: 1%;
+
+  height: 8%;
+  display: grid;
+  column-gap: 1em;
+  grid-template-columns: auto 30%;
+}
+
+.Sidebar>main {
+  height: 90%;
+  padding-left: 1%;
+  position: relative;
+}
+
+.Sidebar>footer {
+  height: 2%;
+  padding-inline-start: 1%;
+}
+
+.Sidebar>footer>div {
+  height: 100%;
+  background-color: #f3f3f3;
+}
+
+.sidebar-title {
+  padding-inline: 2%;
+  background-color: #f3f3f3;
+  border-radius: 0.6em;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+}
+
+.option-bar {
+  padding-inline: 0.5em;
+  border-inline: 1px solid rgb(0, 0, 0, 0.05);
+  border-radius: 1.5em;
+  background-color: #f4f4f4;
+
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  column-gap: 0.5em;
+}
+
+.sidebar-option>i {
+  color: black;
+}
+
+.Sidebar>main.empty {
+  /* background-color: #; */
+}

@@ -1,0 +1,29 @@
+/* -------------
+ $. Configuration
+ -------------*/
+.Configuration {
+  height: 100vh;
+  background-color: #ebebeb;
+}
+
+/* -------------
+ 1. container
+ -------------*/
+.container {
+  height: 95%;
+  padding: 1%;
+
+}
+
+/* -------------
+ 2. footer
+ -------------*/
+.Configuration > footer {
+  height: 5%;
+  padding-inline-start: 1.2em;
+  color: #545454;
+}
+
+.Configuration > footer i {
+  color: #545454;
+}

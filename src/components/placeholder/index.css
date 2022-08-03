@@ -1,0 +1,37 @@
+/* -------------
+ $. Placeholder
+ -------------*/
+ .Placeholder {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.Placeholder .wrapper {
+  height: 70%;
+  width: 90%;
+  border-radius: 8px;
+  background-color: var(--vi-1);
+  position: relative;
+  margin: auto;
+}
+
+.wrapper > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: grab;
+}
+
+.Placeholder img {
+  transform: scale(0.2);
+  opacity: 0.6;
+}
+
+.Placeholder input {
+  opacity: 0;
+}

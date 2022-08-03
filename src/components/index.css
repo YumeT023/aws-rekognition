@@ -1,0 +1,19 @@
+/* -------------
+ $. Media-queries
+ -------------*/
+/* @media screen and (min-width: 64.8em) {
+
+  .Sidebar {
+  }
+
+  .Visualize {
+  }
+}
+
+
+@media screen and (max-width: 64.8em) {
+  .pic-wrapper>main {
+    height: 57% !important;
+    transform: scale(0.98);
+  }
+} */

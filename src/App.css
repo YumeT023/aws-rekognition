@@ -1,0 +1,193 @@
+@import url("./common/components/index.css");
+
+
+/* -------------
+ $. utils
+ -------------*/
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.d-none {
+    display: none;
+}
+
+.h-auto {
+    height: auto;
+}
+
+/* -------------
+ $. util: animation
+ -------------*/
+@keyframes skeletton {
+    0% {
+        background-color: #ededed;
+        box-shadow: -4px 0 5px rgb(0, 0, 0, 0.1);
+    }
+
+    100% {
+        background-color: #cbcbcb;
+        width: 100%;
+        box-shadow: 10px 0 5px #ededed;
+    }
+}
+
+@-webkit-keyframes skeletton {
+    0% {
+        background-color: #cbcbcb;
+    }
+
+    100% {
+        background-color: #fff8e6;
+    }
+}
+
+/* -------------
+ $. utils: loading
+ -------------*/
+.skLoad::after {
+    content: "";
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: #202020;
+    width: 10%;
+    animation: skeletton 0.9s infinite;
+}
+
+/* -------------
+ $. colors
+ -------------*/
+:root {
+    --m-1: #eeeeee;
+    --m-2: #e0e0e0;
+
+    --vi-1: #4b62c4;
+    --vi-2: #3950b6;
+
+    --p-1: rgba(19, 97, 212, 0.8);
+    --p-2: rgba(16, 80, 175, 0.8);
+
+    --s-1: rgba(42, 212, 19, 0.8);
+    --s-2: rgba(16, 175, 16, 0.8);
+
+    --w-1: #e7b431;
+    --w-2: #d4a52c;
+}
+
+/* -------------
+ $. Colorable
+ -------------*/
+.colorable:hover {
+    background-color: #cdcdcd;
+}
+
+.colorable:not([color='default'], [color='medium']) {
+    color: #fff5ff;
+}
+
+/* medium */
+.colorable[color='medium'] {
+    background-color: var(--m-1);
+}
+
+.colorable[color='medium']:hover {
+    background-color: var(--m-2);
+}
+
+/* primary */
+.colorable[color='primary'] {
+    background-color: var(--p-1);
+}
+
+.colorable[color='primary']:hover {
+    background-color: var(--p-2);
+}
+
+/* warning */
+.colorable[color='warning'] {
+    background-color: var(--w-1);
+}
+
+.colorable[color='warning']:hover {
+    background-color: var(--w-2);
+}
+
+/* violet */
+.colorable[color='violet'] {
+    background-color: var(--vi-1);
+}
+
+.colorable[color='violet']:hover {
+    background-color: var(--vi-2);
+}
+
+/* success */
+.colorable[color='success'] {
+    background-color: var(--s-1);
+}
+
+.colorable[color='success']:hover {
+    background-color: var(--s-2);
+}
+
+/* info-sucess */
+.colorable[color="info-success"] {
+    color: #2abb25fb;
+    background-color: rgba(62, 214, 48, 0.384);
+}
+.colorable[color="info-success"]:hover {
+    font-variant: normal;
+}
+
+/* -------------
+ $. util: pretty scroll -uh
+ -------------*/
+.n-scroll::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+}
+
+
+.n-scroll::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+}
+
+.n-scroll:hover::-webkit-scrollbar-thumb {
+    background-color: #bfbfbf;
+    border-radius: 0.6em;
+}
+
+/* -------------
+ $. base
+ -------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
